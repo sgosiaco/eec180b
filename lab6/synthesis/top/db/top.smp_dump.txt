@@ -1,0 +1,8 @@
+
+State Machine - |top|state
+Name state.ERROR state.W_OK state.W_ERROR state.IDLE state.FULL 
+state.IDLE 0 0 0 0 0 
+state.W_ERROR 0 0 1 1 0 
+state.W_OK 0 1 0 1 0 
+state.ERROR 1 0 0 1 0 
+state.FULL 0 0 0 1 1 

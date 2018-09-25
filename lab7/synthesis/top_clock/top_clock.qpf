@@ -1,0 +1,6 @@
+DATE = "17:11:44 May 23, 2018"
+QUARTUS_VERSION = "16.0.0"
+
+# Revisions
+
+PROJECT_REVISION = "top_clock"

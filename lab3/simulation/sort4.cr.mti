@@ -1,0 +1,29 @@
+C:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_sort4.v {1 {vlog -work work -stats=none C:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_sort4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sort4_tb
+
+Top level modules:
+	sort4_tb
+
+} {} {}} C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/sort2.v {1 {vlog -work work -stats=none C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/sort2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sort2
+
+Top level modules:
+	sort2
+
+} {} {}} C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/bubble4.v {1 {vlog -work work -stats=none C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/bubble4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module bubble4
+
+Top level modules:
+	bubble4
+
+} {} {}} C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/sort4.v {1 {vlog -work work -stats=none C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/sort4.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sort4
+
+Top level modules:
+	sort4
+
+} {} {}}

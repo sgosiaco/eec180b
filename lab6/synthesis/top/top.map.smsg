@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at top.v(26): object "ERROR" differs only in case from object "error" in the same scope File: C:/Users/seangosiaco/Desktop/eec180b/lab6/hdl/top.v Line: 26
+Info (10281): Verilog HDL Declaration information at top.v(27): object "FULL" differs only in case from object "full" in the same scope File: C:/Users/seangosiaco/Desktop/eec180b/lab6/hdl/top.v Line: 27

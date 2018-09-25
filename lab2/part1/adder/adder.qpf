@@ -1,0 +1,6 @@
+DATE = "15:05:10 April 18, 2018"
+QUARTUS_VERSION = "16.0.0"
+
+# Revisions
+
+PROJECT_REVISION = "adder"

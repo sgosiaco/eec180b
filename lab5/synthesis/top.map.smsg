@@ -1,0 +1,6 @@
+Info (10281): Verilog HDL Declaration information at top.v(10): object "HEX0" differs only in case from object "hex0" in the same scope File: C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/top.v Line: 10
+Info (10281): Verilog HDL Declaration information at top.v(11): object "HEX1" differs only in case from object "hex1" in the same scope File: C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/top.v Line: 11
+Info (10281): Verilog HDL Declaration information at top.v(12): object "HEX2" differs only in case from object "hex2" in the same scope File: C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/top.v Line: 12
+Info (10281): Verilog HDL Declaration information at top.v(13): object "HEX3" differs only in case from object "hex3" in the same scope File: C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/top.v Line: 13
+Info (10281): Verilog HDL Declaration information at top.v(14): object "HEX4" differs only in case from object "hex4" in the same scope File: C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/top.v Line: 14
+Info (10281): Verilog HDL Declaration information at top.v(16): object "HEX5" differs only in case from object "hex5" in the same scope File: C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/top.v Line: 16

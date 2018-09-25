@@ -1,0 +1,15 @@
+C:/Users/BITKRUSHER/Documents/eec180b/lab1/majority.v {1 {vlog -work work -stats=none C:/Users/BITKRUSHER/Documents/eec180b/lab1/majority.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module majority
+
+Top level modules:
+	majority
+
+} {} {}} C:/Users/BITKRUSHER/Documents/eec180b/lab1/tb_majority.v {1 {vlog -work work -stats=none C:/Users/BITKRUSHER/Documents/eec180b/lab1/tb_majority.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_majority
+
+Top level modules:
+	tb_majority
+
+} {} {}}

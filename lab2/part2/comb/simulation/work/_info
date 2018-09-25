@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/BITKRUSHER/Documents/eec180bLAB/eec180b/lab1/PART 1/simulation
+vcomb
+Z0 !s110 1524091024
+!i10b 1
+!s100 Sk`TWLaN?>Vhm2cJ_b9E:0
+IVIS0`^;Hb1QWO2Hn^Yf]=1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/BITKRUSHER/Documents/eec180b/lab2/part2/comb/simulation
+w1524090591
+8C:/Users/BITKRUSHER/Documents/eec180b/lab2/part2/comb/comb.v
+FC:/Users/BITKRUSHER/Documents/eec180b/lab2/part2/comb/comb.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1524091024.000000
+!s107 C:/Users/BITKRUSHER/Documents/eec180b/lab2/part2/comb/comb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/BITKRUSHER/Documents/eec180b/lab2/part2/comb/comb.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vcomb_tb
+R0
+!i10b 1
+!s100 egR1AhWL_;jI]<19]fS0]3
+Im^?ce0N1V2OHVab68c4mh1
+R1
+R2
+w1524091020
+8C:/Users/BITKRUSHER/Documents/eec180b/lab2/part2/comb/comb_tb.v
+FC:/Users/BITKRUSHER/Documents/eec180b/lab2/part2/comb/comb_tb.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/BITKRUSHER/Documents/eec180b/lab2/part2/comb/comb_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/BITKRUSHER/Documents/eec180b/lab2/part2/comb/comb_tb.v|
+!i113 1
+R5
+R6

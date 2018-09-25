@@ -1,0 +1,220 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/BITKRUSHER/Documents/eec180b/lab2/part2/comb/simulation
+vbubble4
+Z0 !s110 1524546141
+!i10b 1
+!s100 Uzm@G<T=hXNH7jgTXPiF92
+IV`ZP_3lL1^;74WgmUnEL00
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/BITKRUSHER/Documents/eec180b/lab3/simulation
+w1524545694
+8C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/bubble4.v
+FC:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/bubble4.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1524546141.000000
+!s107 C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/bubble4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/bubble4.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vbubble4_tb
+!s110 1524545549
+!i10b 1
+!s100 n=RW[57bWPJlXz4V0n0Z[0
+IVWPV9?R;S3PK::`a`W2]`2
+R1
+R2
+w1524545539
+8C:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_bubble4.v
+FC:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_bubble4.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1524545549.000000
+!s107 C:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_bubble4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_bubble4.v|
+!i113 1
+R5
+R6
+vseg7
+Z7 !s110 1524702819
+!i10b 1
+!s100 9<4H3VYgbTXkNm3:Kbf9:0
+IU>ADSk0JDoO=P0[VJizS02
+R1
+Z8 dC:/Users/seangosiaco/Desktop/eec180b/lab3/simulation
+w1524702434
+8C:/Users/seangosiaco/Desktop/eec180b/lab3/hdl/seg7.v
+FC:/Users/seangosiaco/Desktop/eec180b/lab3/hdl/seg7.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1524702819.000000
+!s107 C:/Users/seangosiaco/Desktop/eec180b/lab3/hdl/seg7.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/seangosiaco/Desktop/eec180b/lab3/hdl/seg7.v|
+!i113 1
+R5
+R6
+vseg7_tb
+R7
+!i10b 1
+!s100 P^GFXeF`=V50AfNKU2ziD2
+IWAd??X5SaU4cN[1:jk^2^1
+R1
+R8
+w1524702815
+8C:/Users/seangosiaco/Desktop/eec180b/lab3/test/tb_seg7.v
+FC:/Users/seangosiaco/Desktop/eec180b/lab3/test/tb_seg7.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/seangosiaco/Desktop/eec180b/lab3/test/tb_seg7.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/seangosiaco/Desktop/eec180b/lab3/test/tb_seg7.v|
+!i113 1
+R5
+R6
+vsort2
+R0
+!i10b 1
+!s100 kbFnEZVj8UPBS>Y=F20fW2
+IWL]MmTl8eOUGRX4c:bZ0;1
+R1
+R2
+w1524544139
+8C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/sort2.v
+FC:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/sort2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/sort2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/sort2.v|
+!i113 1
+R5
+R6
+vsort2_tb
+!s110 1524544450
+!i10b 1
+!s100 h<XoHoW4JaW6@Emof3FjQ1
+IRYzXFiCCicZ@3ojJIbb^I3
+R1
+R2
+w1524544444
+8C:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_sort2.v
+FC:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_sort2.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1524544450.000000
+!s107 C:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_sort2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_sort2.v|
+!i113 1
+R5
+R6
+vsort4
+R0
+!i10b 1
+!s100 bTS:L84FhnXz[d963Eea=1
+IOXJGU5ShgzFZnN=n:Yic>2
+R1
+R2
+w1524546137
+8C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/sort4.v
+FC:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/sort4.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/sort4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/sort4.v|
+!i113 1
+R5
+R6
+vsort4_tb
+R0
+!i10b 1
+!s100 8CY_NM1PDb^20EMCFXWEY1
+IAmj2QSJg82e_b>6Co4keP3
+R1
+R2
+w1524546064
+8C:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_sort4.v
+FC:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_sort4.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_sort4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/BITKRUSHER/Documents/eec180b/lab3/test/tb_sort4.v|
+!i113 1
+R5
+R6
+vtemp
+!s110 1524697612
+!i10b 1
+!s100 =SETVAm=3LhcIZ__nK3]i2
+II_Hc6W?kRPQCkVUVZi[oR1
+R1
+R2
+w1524697561
+8C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/temp.v
+FC:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/temp.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1524697612.000000
+!s107 C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/temp.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/BITKRUSHER/Documents/eec180b/lab3/hdl/temp.v|
+!i113 1
+R5
+R6
+vtemp_tb
+!s110 1524702499
+!i10b 1
+!s100 hU1KUMCm:DW75PGO?h6N]1
+I2P_9j3DSzTLR5A8V2fXJX1
+R1
+R8
+w1524702492
+8C:/Users/seangosiaco/Desktop/eec180b/lab3/test/tb_temp.v
+FC:/Users/seangosiaco/Desktop/eec180b/lab3/test/tb_temp.v
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1524702499.000000
+!s107 C:/Users/seangosiaco/Desktop/eec180b/lab3/test/tb_temp.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/seangosiaco/Desktop/eec180b/lab3/test/tb_temp.v|
+!i113 1
+R5
+R6

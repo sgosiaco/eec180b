@@ -1,0 +1,18 @@
+Fitter Status : Successful - Wed May 23 17:36:00 2018
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : top_clock
+Top-level Entity Name : top_clock
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 120 / 49,760 ( < 1 % )
+    Total combinational functions : 119 / 49,760 ( < 1 % )
+    Dedicated logic registers : 79 / 49,760 ( < 1 % )
+Total registers : 79
+Total pins : 25 / 360 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 0 / 1,677,312 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )

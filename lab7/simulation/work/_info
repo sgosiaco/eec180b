@@ -1,0 +1,199 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/seangosiaco/Desktop/eec180b/lab6/simulation
+vfsm
+Z0 !s110 1527725638
+!i10b 1
+!s100 4oU@YhRZ6llD?iC_CZNbj3
+I>_4WAgJjYZ5A:Uii8e4>f0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/seangosiaco/Desktop/eec180b/lab7/simulation
+w1527708432
+8C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/fsm.v
+FC:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/fsm.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1527725638.000000
+!s107 C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/fsm.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/fsm.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vhex2dec
+Z7 !s110 1527725620
+!i10b 1
+!s100 amXFZG8J]9N4;a[FBDIM^1
+I3D2Q]@2`j<QHF<fnDgn^]1
+R1
+R2
+w1527725492
+8C:/Users/seangosiaco/Desktop/eec180b/lab7/test/hex2dec.v
+FC:/Users/seangosiaco/Desktop/eec180b/lab7/test/hex2dec.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1527725620.000000
+!s107 C:/Users/seangosiaco/Desktop/eec180b/lab7/test/hex2dec.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/seangosiaco/Desktop/eec180b/lab7/test/hex2dec.v|
+!i113 1
+R5
+R6
+vmem
+R0
+!i10b 1
+!s100 EzgH5G6CP6aOM:djl;ihE0
+ImeG_HiiXoUeKB1Bcae@GJ3
+R1
+R2
+w1527719355
+8C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/mem.v
+FC:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/mem.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/mem.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/mem.v|
+!i113 1
+R5
+R6
+vpulse
+R0
+!i10b 1
+!s100 HBLFPeHTem5bOkQ<ic4=31
+IlZkUPc797:6LhlXf[TPAO1
+R1
+R2
+w1527123152
+8C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/pulse.v
+FC:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/pulse.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/pulse.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/pulse.v|
+!i113 1
+R5
+R6
+vpulse_once
+R0
+!i10b 1
+!s100 VYd5A<PNeF@@96jU6icDk0
+IZ7R8i;fV@UYeLSZlAo5fP1
+R1
+R2
+w1527187028
+8C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/pulse_once.v
+FC:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/pulse_once.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/pulse_once.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/pulse_once.v|
+!i113 1
+R5
+R6
+vseg7
+R0
+!i10b 1
+!s100 XMn1CH<Fani[WMAQLGhNC1
+IGUOWD75ZG4Z3<<Sc]J_dX0
+R1
+R2
+w1524707746
+8C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/seg7.v
+FC:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/seg7.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/seg7.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/seg7.v|
+!i113 1
+R5
+R6
+vtop
+R0
+!i10b 1
+!s100 21a>zC@Ld6N5kVfEEQB`E3
+I5B6h6U7_9;MFR]QN]h87[3
+R1
+R2
+w1527719665
+8C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v
+FC:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v|
+!i113 1
+R5
+R6
+vtop2_tb
+R7
+!i10b 1
+!s100 M5YfHY[V4nNMEJ@SCo:UI0
+I>MoRe1CbeHebN[X=g8R]Z1
+R1
+R2
+w1527725371
+8C:/Users/seangosiaco/Desktop/eec180b/lab7/test/tb_top2.v
+FC:/Users/seangosiaco/Desktop/eec180b/lab7/test/tb_top2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/seangosiaco/Desktop/eec180b/lab7/test/tb_top2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/seangosiaco/Desktop/eec180b/lab7/test/tb_top2.v|
+!i113 1
+R5
+R6
+vtop_tb
+R0
+!i10b 1
+!s100 IfICFIW]c9znGhEWGiW_j1
+ILESLloNYQ9OV6M5FRUFgF2
+R1
+R2
+w1527725393
+8C:/Users/seangosiaco/Desktop/eec180b/lab7/test/tb_top.v
+FC:/Users/seangosiaco/Desktop/eec180b/lab7/test/tb_top.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/seangosiaco/Desktop/eec180b/lab7/test/tb_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/seangosiaco/Desktop/eec180b/lab7/test/tb_top.v|
+!i113 1
+R5
+R6

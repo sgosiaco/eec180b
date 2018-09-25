@@ -1,0 +1,36 @@
+C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/seg7.v {1 {vlog -work work -stats=none C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/seg7.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module seg7
+
+Top level modules:
+	seg7
+
+} {} {}} C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/top.v {1 {vlog -work work -stats=none C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/seangosiaco/Desktop/eec180b/lab5/test/tb_top.v {1 {vlog -work work -stats=none C:/Users/seangosiaco/Desktop/eec180b/lab5/test/tb_top.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module top_tb
+
+Top level modules:
+	top_tb
+
+} {} {}} C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/counter.v {1 {vlog -work work -stats=none C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/counter.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module counter
+
+Top level modules:
+	counter
+
+} {} {}} C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/pulse.v {1 {vlog -work work -stats=none C:/Users/seangosiaco/Desktop/eec180b/lab5/hdl/pulse.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module pulse
+
+Top level modules:
+	pulse
+
+} {} {}}

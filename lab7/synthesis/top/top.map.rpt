@@ -1,0 +1,648 @@
+Analysis & Synthesis report for top
+Wed May 30 16:58:32 2018
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. Removed Registers Triggering Further Register Optimizations
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Parameter Settings for User Entity Instance: fsm:fsm
+ 13. Parameter Settings for User Entity Instance: seg7:hex0
+ 14. Parameter Settings for User Entity Instance: seg7:hex1
+ 15. Parameter Settings for User Entity Instance: seg7:hex2
+ 16. Parameter Settings for User Entity Instance: seg7:hex3
+ 17. Parameter Settings for User Entity Instance: seg7:hex4
+ 18. Parameter Settings for User Entity Instance: seg7:hex5
+ 19. Port Connectivity Checks: "seg7:hex5"
+ 20. Port Connectivity Checks: "seg7:hex3"
+ 21. Port Connectivity Checks: "fsm:fsm"
+ 22. Port Connectivity Checks: "pulse_once:pulse_10"
+ 23. Port Connectivity Checks: "pulse:pulse"
+ 24. Post-Synthesis Netlist Statistics for Top Partition
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
+ 27. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++------------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Wed May 30 16:58:32 2018       ;
+; Quartus Prime Version              ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name                      ; top                                         ;
+; Top-level Entity Name              ; top                                         ;
+; Family                             ; MAX 10                                      ;
+; Total logic elements               ; 236                                         ;
+;     Total combinational functions  ; 219                                         ;
+;     Dedicated logic registers      ; 91                                          ;
+; Total registers                    ; 91                                          ;
+; Total pins                         ; 71                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
++------------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 10M50DAF484C7G     ;                    ;
+; Top-level entity name                                                      ; top                ; top                ;
+; Family name                                                                ; MAX 10 FPGA        ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 2           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.1%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; ../../hdl/pulse_once.v           ; yes             ; User Verilog HDL File  ; C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/pulse_once.v ;         ;
+; ../../hdl/top.v                  ; yes             ; User Verilog HDL File  ; C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v        ;         ;
+; ../../hdl/seg7.v                 ; yes             ; User Verilog HDL File  ; C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/seg7.v       ;         ;
+; ../../hdl/pulse.v                ; yes             ; User Verilog HDL File  ; C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/pulse.v      ;         ;
+; ../../hdl/mem.v                  ; yes             ; User Verilog HDL File  ; C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/mem.v        ;         ;
+; ../../hdl/fsm.v                  ; yes             ; User Verilog HDL File  ; C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/fsm.v        ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                       ;
++---------------------------------------------+---------------------+
+; Resource                                    ; Usage               ;
++---------------------------------------------+---------------------+
+; Estimated Total logic elements              ; 236                 ;
+;                                             ;                     ;
+; Total combinational functions               ; 219                 ;
+; Logic element usage by number of LUT inputs ;                     ;
+;     -- 4 input functions                    ; 98                  ;
+;     -- 3 input functions                    ; 42                  ;
+;     -- <=2 input functions                  ; 79                  ;
+;                                             ;                     ;
+; Logic elements by mode                      ;                     ;
+;     -- normal mode                          ; 169                 ;
+;     -- arithmetic mode                      ; 50                  ;
+;                                             ;                     ;
+; Total registers                             ; 91                  ;
+;     -- Dedicated logic registers            ; 91                  ;
+;     -- I/O registers                        ; 0                   ;
+;                                             ;                     ;
+; I/O pins                                    ; 71                  ;
+;                                             ;                     ;
+; Embedded Multiplier 9-bit elements          ; 0                   ;
+;                                             ;                     ;
+; Maximum fan-out node                        ; MAX10_CLK1_50~input ;
+; Maximum fan-out                             ; 91                  ;
+; Total fan-out                               ; 1018                ;
+; Average fan-out                             ; 2.25                ;
++---------------------------------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                     ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name      ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+-------------+--------------+
+; |top                       ; 219 (11)            ; 91 (2)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 71   ; 0            ; 0          ; |top                     ; top         ; work         ;
+;    |fsm:fsm|               ; 53 (53)             ; 22 (22)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|fsm:fsm             ; fsm         ; work         ;
+;    |mem:mem|               ; 10 (10)             ; 15 (15)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|mem:mem             ; mem         ; work         ;
+;    |pulse:pulse|           ; 45 (45)             ; 26 (26)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|pulse:pulse         ; pulse       ; work         ;
+;    |pulse_once:pulse_10|   ; 63 (63)             ; 26 (26)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|pulse_once:pulse_10 ; pulse_once  ; work         ;
+;    |seg7:hex0|             ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|seg7:hex0           ; seg7        ; work         ;
+;    |seg7:hex1|             ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|seg7:hex1           ; seg7        ; work         ;
+;    |seg7:hex2|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|seg7:hex2           ; seg7        ; work         ;
+;    |seg7:hex3|             ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|seg7:hex3           ; seg7        ; work         ;
+;    |seg7:hex4|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|seg7:hex4           ; seg7        ; work         ;
+;    |seg7:hex5|             ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top|seg7:hex5           ; seg7        ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; fsm:fsm|wr_data_r[3]                  ; Stuck at GND due to stuck port data_in ;
+; mem:mem|rd_data[3]                    ; Stuck at GND due to stuck port data_in ;
+; fsm:fsm|rd_in_r[3]                    ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 3 ;                                        ;
++---------------------------------------+----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                               ;
++----------------------+---------------------------+----------------------------------------+
+; Register name        ; Reason for Removal        ; Registers Removed due to This Register ;
++----------------------+---------------------------+----------------------------------------+
+; fsm:fsm|wr_data_r[3] ; Stuck at GND              ; mem:mem|rd_data[3], fsm:fsm|rd_in_r[3] ;
+;                      ; due to stuck port data_in ;                                        ;
++----------------------+---------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 91    ;
+; Number of registers using Synchronous Clear  ; 31    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 17    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+; 3:1                ; 14 bits   ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |top|pulse_once:pulse_10|count[23] ;
+; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |top|pulse_once:pulse_10|count[1]  ;
+; 3:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |top|pulse:pulse|count[24]         ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |top|fsm:fsm|state[0]              ;
+; 34:1               ; 5 bits    ; 110 LEs       ; 30 LEs               ; 80 LEs                 ; No         ; |top|fsm:fsm|wr_addr[1]            ;
+; 34:1               ; 2 bits    ; 44 LEs        ; 8 LEs                ; 36 LEs                 ; No         ; |top|fsm:fsm|rd_addr[1]            ;
+; 34:1               ; 4 bits    ; 88 LEs        ; 8 LEs                ; 80 LEs                 ; No         ; |top|fsm:fsm|rd_out[3]             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------+
+
+
++------------------------------------------------------+
+; Parameter Settings for User Entity Instance: fsm:fsm ;
++----------------+-------+-----------------------------+
+; Parameter Name ; Value ; Type                        ;
++----------------+-------+-----------------------------+
+; LOAD_10        ; 00000 ; Unsigned Binary             ;
+; LOAD_11        ; 00001 ; Unsigned Binary             ;
+; LOAD_12        ; 00010 ; Unsigned Binary             ;
+; LOAD_13        ; 00011 ; Unsigned Binary             ;
+; WAIT_1         ; 00100 ; Unsigned Binary             ;
+; READ_13        ; 00101 ; Unsigned Binary             ;
+; READ_12        ; 00110 ; Unsigned Binary             ;
+; READ_11        ; 00111 ; Unsigned Binary             ;
+; READ_10        ; 01000 ; Unsigned Binary             ;
+; WAIT_2         ; 01001 ; Unsigned Binary             ;
+; LOAD_20        ; 01010 ; Unsigned Binary             ;
+; LOAD_21        ; 01011 ; Unsigned Binary             ;
+; WAIT_3         ; 01100 ; Unsigned Binary             ;
+; READ_23        ; 01101 ; Unsigned Binary             ;
+; READ_22        ; 01110 ; Unsigned Binary             ;
+; READ_21        ; 01111 ; Unsigned Binary             ;
+; READ_20        ; 10000 ; Unsigned Binary             ;
+; WAIT_4         ; 10001 ; Unsigned Binary             ;
+; WAIT_5         ; 10010 ; Unsigned Binary             ;
++----------------+-------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: seg7:hex0 ;
++----------------+---------+-----------------------------+
+; Parameter Name ; Value   ; Type                        ;
++----------------+---------+-----------------------------+
+; ZERO           ; 1000000 ; Unsigned Binary             ;
+; ONE            ; 1111001 ; Unsigned Binary             ;
+; TWO            ; 0100100 ; Unsigned Binary             ;
+; THREE          ; 0110000 ; Unsigned Binary             ;
+; FOUR           ; 0011001 ; Unsigned Binary             ;
+; FIVE           ; 0010010 ; Unsigned Binary             ;
+; SIX            ; 0000010 ; Unsigned Binary             ;
+; SEVEN          ; 1111000 ; Unsigned Binary             ;
+; EIGHT          ; 0000000 ; Unsigned Binary             ;
+; NINE           ; 0011000 ; Unsigned Binary             ;
+; A              ; 0001000 ; Unsigned Binary             ;
+; B              ; 0000011 ; Unsigned Binary             ;
+; C              ; 1000110 ; Unsigned Binary             ;
+; D              ; 0100001 ; Unsigned Binary             ;
+; E              ; 0000110 ; Unsigned Binary             ;
+; F              ; 0001110 ; Unsigned Binary             ;
++----------------+---------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: seg7:hex1 ;
++----------------+---------+-----------------------------+
+; Parameter Name ; Value   ; Type                        ;
++----------------+---------+-----------------------------+
+; ZERO           ; 1000000 ; Unsigned Binary             ;
+; ONE            ; 1111001 ; Unsigned Binary             ;
+; TWO            ; 0100100 ; Unsigned Binary             ;
+; THREE          ; 0110000 ; Unsigned Binary             ;
+; FOUR           ; 0011001 ; Unsigned Binary             ;
+; FIVE           ; 0010010 ; Unsigned Binary             ;
+; SIX            ; 0000010 ; Unsigned Binary             ;
+; SEVEN          ; 1111000 ; Unsigned Binary             ;
+; EIGHT          ; 0000000 ; Unsigned Binary             ;
+; NINE           ; 0011000 ; Unsigned Binary             ;
+; A              ; 0001000 ; Unsigned Binary             ;
+; B              ; 0000011 ; Unsigned Binary             ;
+; C              ; 1000110 ; Unsigned Binary             ;
+; D              ; 0100001 ; Unsigned Binary             ;
+; E              ; 0000110 ; Unsigned Binary             ;
+; F              ; 0001110 ; Unsigned Binary             ;
++----------------+---------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: seg7:hex2 ;
++----------------+---------+-----------------------------+
+; Parameter Name ; Value   ; Type                        ;
++----------------+---------+-----------------------------+
+; ZERO           ; 1000000 ; Unsigned Binary             ;
+; ONE            ; 1111001 ; Unsigned Binary             ;
+; TWO            ; 0100100 ; Unsigned Binary             ;
+; THREE          ; 0110000 ; Unsigned Binary             ;
+; FOUR           ; 0011001 ; Unsigned Binary             ;
+; FIVE           ; 0010010 ; Unsigned Binary             ;
+; SIX            ; 0000010 ; Unsigned Binary             ;
+; SEVEN          ; 1111000 ; Unsigned Binary             ;
+; EIGHT          ; 0000000 ; Unsigned Binary             ;
+; NINE           ; 0011000 ; Unsigned Binary             ;
+; A              ; 0001000 ; Unsigned Binary             ;
+; B              ; 0000011 ; Unsigned Binary             ;
+; C              ; 1000110 ; Unsigned Binary             ;
+; D              ; 0100001 ; Unsigned Binary             ;
+; E              ; 0000110 ; Unsigned Binary             ;
+; F              ; 0001110 ; Unsigned Binary             ;
++----------------+---------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: seg7:hex3 ;
++----------------+---------+-----------------------------+
+; Parameter Name ; Value   ; Type                        ;
++----------------+---------+-----------------------------+
+; ZERO           ; 1000000 ; Unsigned Binary             ;
+; ONE            ; 1111001 ; Unsigned Binary             ;
+; TWO            ; 0100100 ; Unsigned Binary             ;
+; THREE          ; 0110000 ; Unsigned Binary             ;
+; FOUR           ; 0011001 ; Unsigned Binary             ;
+; FIVE           ; 0010010 ; Unsigned Binary             ;
+; SIX            ; 0000010 ; Unsigned Binary             ;
+; SEVEN          ; 1111000 ; Unsigned Binary             ;
+; EIGHT          ; 0000000 ; Unsigned Binary             ;
+; NINE           ; 0011000 ; Unsigned Binary             ;
+; A              ; 0001000 ; Unsigned Binary             ;
+; B              ; 0000011 ; Unsigned Binary             ;
+; C              ; 1000110 ; Unsigned Binary             ;
+; D              ; 0100001 ; Unsigned Binary             ;
+; E              ; 0000110 ; Unsigned Binary             ;
+; F              ; 0001110 ; Unsigned Binary             ;
++----------------+---------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: seg7:hex4 ;
++----------------+---------+-----------------------------+
+; Parameter Name ; Value   ; Type                        ;
++----------------+---------+-----------------------------+
+; ZERO           ; 1000000 ; Unsigned Binary             ;
+; ONE            ; 1111001 ; Unsigned Binary             ;
+; TWO            ; 0100100 ; Unsigned Binary             ;
+; THREE          ; 0110000 ; Unsigned Binary             ;
+; FOUR           ; 0011001 ; Unsigned Binary             ;
+; FIVE           ; 0010010 ; Unsigned Binary             ;
+; SIX            ; 0000010 ; Unsigned Binary             ;
+; SEVEN          ; 1111000 ; Unsigned Binary             ;
+; EIGHT          ; 0000000 ; Unsigned Binary             ;
+; NINE           ; 0011000 ; Unsigned Binary             ;
+; A              ; 0001000 ; Unsigned Binary             ;
+; B              ; 0000011 ; Unsigned Binary             ;
+; C              ; 1000110 ; Unsigned Binary             ;
+; D              ; 0100001 ; Unsigned Binary             ;
+; E              ; 0000110 ; Unsigned Binary             ;
+; F              ; 0001110 ; Unsigned Binary             ;
++----------------+---------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: seg7:hex5 ;
++----------------+---------+-----------------------------+
+; Parameter Name ; Value   ; Type                        ;
++----------------+---------+-----------------------------+
+; ZERO           ; 1000000 ; Unsigned Binary             ;
+; ONE            ; 1111001 ; Unsigned Binary             ;
+; TWO            ; 0100100 ; Unsigned Binary             ;
+; THREE          ; 0110000 ; Unsigned Binary             ;
+; FOUR           ; 0011001 ; Unsigned Binary             ;
+; FIVE           ; 0010010 ; Unsigned Binary             ;
+; SIX            ; 0000010 ; Unsigned Binary             ;
+; SEVEN          ; 1111000 ; Unsigned Binary             ;
+; EIGHT          ; 0000000 ; Unsigned Binary             ;
+; NINE           ; 0011000 ; Unsigned Binary             ;
+; A              ; 0001000 ; Unsigned Binary             ;
+; B              ; 0000011 ; Unsigned Binary             ;
+; C              ; 1000110 ; Unsigned Binary             ;
+; D              ; 0100001 ; Unsigned Binary             ;
+; E              ; 0000110 ; Unsigned Binary             ;
+; F              ; 0001110 ; Unsigned Binary             ;
++----------------+---------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "seg7:hex5"      ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; in[3..2] ; Input ; Info     ; Stuck at GND ;
++----------+-------+----------+--------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "seg7:hex3"      ;
++----------+-------+----------+--------------+
+; Port     ; Type  ; Severity ; Details      ;
++----------+-------+----------+--------------+
+; in[3..2] ; Input ; Info     ; Stuck at GND ;
++----------+-------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "fsm:fsm"                                                                                ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; state[4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------+
+; Port Connectivity Checks: "pulse_once:pulse_10"    ;
++------------------+-------+----------+--------------+
+; Port             ; Type  ; Severity ; Details      ;
++------------------+-------+----------+--------------+
+; divideby[25..23] ; Input ; Info     ; Stuck at GND ;
+; divideby[21..20] ; Input ; Info     ; Stuck at GND ;
+; divideby[17..15] ; Input ; Info     ; Stuck at GND ;
+; divideby[13..12] ; Input ; Info     ; Stuck at GND ;
+; divideby[5..2]   ; Input ; Info     ; Stuck at GND ;
+; divideby[10]     ; Input ; Info     ; Stuck at GND ;
+; divideby[7]      ; Input ; Info     ; Stuck at GND ;
+; divideby[0]      ; Input ; Info     ; Stuck at GND ;
++------------------+-------+----------+--------------+
+
+
++---------------------------------------------------+
+; Port Connectivity Checks: "pulse:pulse"           ;
++-----------------+-------+----------+--------------+
+; Port            ; Type  ; Severity ; Details      ;
++-----------------+-------+----------+--------------+
+; divideby[11..8] ; Input ; Info     ; Stuck at GND ;
+; divideby[6..2]  ; Input ; Info     ; Stuck at GND ;
+; divideby[24]    ; Input ; Info     ; Stuck at GND ;
+; divideby[18]    ; Input ; Info     ; Stuck at GND ;
+; divideby[16]    ; Input ; Info     ; Stuck at GND ;
+; divideby[0]     ; Input ; Info     ; Stuck at GND ;
++-----------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 71                          ;
+; cycloneiii_ff         ; 91                          ;
+;     ENA               ; 12                          ;
+;     ENA SCLR          ; 5                           ;
+;     SCLR              ; 26                          ;
+;     plain             ; 48                          ;
+; cycloneiii_lcell_comb ; 223                         ;
+;     arith             ; 50                          ;
+;         2 data inputs ; 50                          ;
+;     normal            ; 173                         ;
+;         0 data inputs ; 2                           ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 27                          ;
+;         3 data inputs ; 42                          ;
+;         4 data inputs ; 98                          ;
+;                       ;                             ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 4.31                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:04     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Wed May 30 16:57:46 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off top -c top
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /users/seangosiaco/desktop/eec180b/lab7/hdl/pulse_once.v
+    Info (12023): Found entity 1: pulse_once File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/pulse_once.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/seangosiaco/desktop/eec180b/lab7/hdl/top.v
+    Info (12023): Found entity 1: top File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/seangosiaco/desktop/eec180b/lab7/hdl/seg7.v
+    Info (12023): Found entity 1: seg7 File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/seg7.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/seangosiaco/desktop/eec180b/lab7/hdl/pulse.v
+    Info (12023): Found entity 1: pulse File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/pulse.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/seangosiaco/desktop/eec180b/lab7/hdl/mem.v
+    Info (12023): Found entity 1: mem File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/mem.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /users/seangosiaco/desktop/eec180b/lab7/hdl/fsm.v
+    Info (12023): Found entity 1: fsm File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/fsm.v Line: 1
+Info (12127): Elaborating entity "top" for the top level hierarchy
+Info (12128): Elaborating entity "pulse" for hierarchy "pulse:pulse" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 57
+Info (12128): Elaborating entity "pulse_once" for hierarchy "pulse_once:pulse_10" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 68
+Info (12128): Elaborating entity "fsm" for hierarchy "fsm:fsm" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 83
+Info (12128): Elaborating entity "mem" for hierarchy "mem:mem" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 92
+Info (12128): Elaborating entity "seg7" for hierarchy "seg7:hex0" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 97
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276004): RAM logic "mem:mem|mem" is uninferred due to inappropriate RAM size File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/mem.v Line: 10
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 8
+    Warning (13410): Pin "LEDR[2]" is stuck at GND File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 8
+    Warning (13410): Pin "LEDR[3]" is stuck at GND File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 8
+    Warning (13410): Pin "LEDR[4]" is stuck at GND File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 8
+    Warning (13410): Pin "LEDR[5]" is stuck at GND File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 8
+    Warning (13410): Pin "LEDR[6]" is stuck at GND File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 8
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 8
+    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 10
+    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 11
+    Warning (13410): Pin "HEX2[7]" is stuck at VCC File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 12
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 13
+    Warning (13410): Pin "HEX3[7]" is stuck at VCC File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 13
+    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 14
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 16
+    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 16
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/seangosiaco/Desktop/eec180b/lab7/synthesis/top/top.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 9 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 4
+    Warning (15610): No output dependent on input pin "SW[2]" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[3]" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[4]" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[5]" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[6]" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 6
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/seangosiaco/Desktop/eec180b/lab7/hdl/top.v Line: 6
+Info (21057): Implemented 321 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 58 output pins
+    Info (21061): Implemented 250 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 27 warnings
+    Info: Peak virtual memory: 643 megabytes
+    Info: Processing ended: Wed May 30 16:58:32 2018
+    Info: Elapsed time: 00:00:46
+    Info: Total CPU time (on all processors): 00:00:53
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/seangosiaco/Desktop/eec180b/lab7/synthesis/top/top.map.smsg.
+
+

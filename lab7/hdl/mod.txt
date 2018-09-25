@@ -1,0 +1,16 @@
+modified stuff from past working
+    added default state to try and get it to compile as a state machine
+    changed sensitivity list on always block for state machine
+    changed 2nd set of reads to use rd_in_r instead of rd_in
+
+    fixed huge ass bug of not having the dimensions on the output variables
+        wr_addr, wr_data, rd_addr
+
+    probably have to change data modified in state machine to registers
+        like balance from last lab
+
+    currently trying out adding defaults back instead of making them registers
+
+
+    maybe remove reset from memory????
+    simulation demo change divideby number for the pulse clock to make it run faster
